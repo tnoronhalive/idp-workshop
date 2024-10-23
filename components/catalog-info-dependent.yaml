@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: yournamehere-service-dependency
+  name: tnoronha-service-dependency
   description: |
     My Example service which has something to do with APIs and database.
   links:
@@ -37,15 +37,15 @@ metadata:
     #jira/project-key: IDP
     ## Jira plugin - End
   tags:
-    - yournamehere
+    - tnoronha
 spec:
   type: service
-  owner: change-value
+  owner: TeamB
   lifecycle: experimental
   consumesApis:
     - spotify
   providesApis:
     - petstore
-#  dependsOn:
-#    - component:default/yournamehere-service
-#  system: yournamehere-system
+  dependsOn:
+    - component:default/tnoronha-service
+  system: yournamehere-system
